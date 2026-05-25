@@ -1,0 +1,26 @@
+# Entornos Virtuales 
+.venv/
+venv/
+env/
+ENV/
+
+# Archivos de caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de entorno y secretos
+.env
+.secrets
+
+# Datos pesados (Opcional, pero recomendado)
+# Descomenta las siguientes líneas si no quieres subir los CSV a GitHub 
+# para no saturar el repositorio. (Tus compañeros tendrían que descargar 
+# el zip original por su cuenta y ponerlo en la carpeta 'data/raw/')
+data/raw/*.csv
+data/processed/*.csv
+
+# Archivos de configuración de editores (VS Code, PyCharm, Jupyter)
+.vscode/
+.idea/
+.ipynb_checkpoints/
