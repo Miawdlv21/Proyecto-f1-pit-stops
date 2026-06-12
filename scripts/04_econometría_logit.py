@@ -14,7 +14,7 @@ os.makedirs(carpeta_salida, exist_ok=True)
 # 2. Cargar el dataset maestro
 df = pd.read_csv('data/dataset_maestro_f1.csv')
 
-# 3. ESPECIFICACIÓN DEL MODELO LOGIT (Estilo Gujarati)
+# 3. ESPECIFICACIÓN DEL MODELO LOGIT 
 formula = 'target_top5 ~ delta_pit_stop + total_stops'
 modelo_logit = smf.logit(formula=formula, data=df).fit()
 
